@@ -316,7 +316,7 @@ void DSelector_omega_pi_effic::Init(TTree* locTree) {
 	Initialize_Actions();
 	dAnalyzeCutActions->Initialize();
 
-	// Create histograms.
+	// CREATE HISTOGRAMS
 	TDirectory* locDir = gDirectory;
 	for (UInt_t locCutVariant = 0; locCutVariant < CUT_VARIANT_COUNT; ++locCutVariant) {
 		TDirectory* locCutDir = locDir->mkdir(Form("Cut%s", CUT_VARIANT[locCutVariant].dName));
